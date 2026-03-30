@@ -5,13 +5,15 @@ name: Pipeline de CI/CD - Meu Primeiro Robô
 on:
 
   push:
-
+  
     branches: [ main ]
 
   pull_request:
 
     branches: [ main ]
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 # Definindo os trabalhos (jobs) que serão executados
 
 jobs:
